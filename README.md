@@ -24,6 +24,7 @@ Cheap, low-power and small wireless sensor nodes.
 
 |type| Description                     |
 |----|---------------------------------|
+|    |     ** System nodes **          |
 | 00 | Plain node, no sensor           |
 | 01 | Server node                     |
 |    |      Display Nodes              |
