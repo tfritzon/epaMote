@@ -22,47 +22,28 @@ Cheap, low-power and small wireless sensor nodes.
 
 # Node types
 
-  +----+---------------------------------+
-  | 00 | Plain node, no sensor           |
-  +----+---------------------------------+
-  | 01 | Server node                     |
-  +----+---------------------------------+
-  |           Display Nodes              |
-  +--------------------------------------+
-  | 10 | Basic 16x2 LCD display node     |
-  +----+---------------------------------+
-  | 11 | Text display node               |
-  +----+---------------------------------+
-  | 12 | Graphics display node           |
-  +----+---------------------------------+
-  |         Temperature Nodes            |
-  +--------------------------------------+
-  | 20 | Plain temperature sensor node   |
-  +----+---------------------------------+
-  | 21 | High temperature node           |
-  +----+---------------------------------+
-  | 22 | Extremely high temperature      |
-  +----+---------------------------------+
-  | 23 | Low temperature node            |
-  +----+---------------------------------+
-  | 24 | Extremely low temperature node  |
-  +----+---------------------------------+
-  |             Light Senors             |
-  +----+---------------------------------+
-  | 30 | Plain light node                |
-  +----+---------------------------------+
-  | 31 | Infrared node                   |
-  +----+---------------------------------+
-  | 32 | Ultraviolet node                |
-  +----+---------------------------------+
-  |           Humitidy Sensors           |
-  +----+---------------------------------+
-  | 40 | Air humidity                    |
-  +----+---------------------------------+
-  | 41 | Soil humidity                   |
-  +----+---------------------------------+
-  | ...                                  |
-  +--------------------------------------+
+|type| Description                     |
+|----|---------------------------------|
+| 00 | Plain node, no sensor           |
+| 01 | Server node                     |
+|           Display Nodes              |
+| 10 | Basic 16x2 LCD display node     |
+| 11 | Text display node               |
+| 12 | Graphics display node           |
+|         Temperature Nodes            |
+| 20 | Plain temperature sensor node   |
+| 21 | High temperature node           |
+| 22 | Extremely high temperature      |
+| 23 | Low temperature node            |
+| 24 | Extremely low temperature node  |
+|             Light Senors             |
+| 30 | Plain light node                |
+| 31 | Infrared node                   |
+| 32 | Ultraviolet node                |
+|           Humitidy Sensors           |
+| 40 | Air humidity                    |
+| 41 | Soil humidity                   |
+| ...                                  |
 
 
 # Joining the Network
