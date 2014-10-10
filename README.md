@@ -10,19 +10,12 @@ Cheap, low-power and small wireless sensor nodes.
 
 # Packet Types
 
-  +----+---------------------------------+
-  | B0 | Boot ID request                 |
-  +----+---------------------------------+
-  | 1D | ID response                     |
-  +----+---------------------------------+
-  | DA | Sensor data                     |
-  +----+---------------------------------+
-  | ED | Transition to epidemic state    |
-  +----+---------------------------------+
-  | A0 | Transition to online mesh state |
-  +----+---------------------------------+
-  | 5D | Software download to node       |
-  +----+---------------------------------+
+  |:B0:| Boot ID request                 |
+  |:1D:| ID response                     |
+  |:DA:| Sensor data                     |
+  |:ED:| Transition to epidemic state    |
+  |:A0:| Transition to online mesh state |
+  |:5D:| Software download to node       |
 
 
 # Node types
