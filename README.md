@@ -10,6 +10,8 @@ Cheap, low-power and small wireless sensor nodes.
 
 # Packet Types
 
+  |type| Description                     |
+  |----|---------------------------------|
   |:B0:| Boot ID request                 |
   |:1D:| ID response                     |
   |:DA:| Sensor data                     |
