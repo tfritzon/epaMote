@@ -1,26 +1,51 @@
-Packet Header
--------------
 
-  type|ID|timestamp
+                       1. SPECIFICATION
 
+1.1. Packet Header Format
 
+  A summary of the packet header follows:
 
-Packet Types
-------------
+    octet 0               1               2               3
+    bit   0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7
+         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+         | Version       | Type          | ID                            |
+         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+         | timestamp                                                     |
+         +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    octet 4               5               6               7
+    bit   0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7
 
-  +----+---------------------------------+
-  | B0 | Boot ID request                 |
-  +----+---------------------------------+
-  | 1D | ID response                     |
-  +----+---------------------------------+
-  | DA | Sensor data                     |
-  +----+---------------------------------+
-  | ED | Transition to epidemic state    |
-  +----+---------------------------------+
-  | A0 | Transition to online mesh state |
-  +----+---------------------------------+
-  | 5D | Software download to node       |
-  +----+---------------------------------+
+                             Packet Header Format
+
+                                   Figure 1.
+
+  Note that each tick mark represents one bit position.
+
+  Version: 8 bits
+
+    The Version field indicates the format of the packet header. This
+    document describes version 1.
+
+  Type: 8 bits
+
+    The Type field identifies the payload type of the packet.
+
+      B0 | Boot ID request
+      1D | ID response
+      DA | Sensor data
+      ED | Transition to epidemic state
+      A0 | Transition to online mesh state
+      5D | Software update
+
+  ID: 16 bits
+
+    The ID is the node ID assigned by a server or self-assigned
+    when a node boots.
+
+  Timestamp: 32 bits
+
+    The timestamp is the number of seconds since epoch (Jan. 1 1970)
+    It's an unsigned value.
 
 
 Node types
